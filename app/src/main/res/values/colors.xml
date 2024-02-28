@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- basic colors -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FFE60313</color>
+    <color name="yellow">#FFFF9900</color>
+    <color name="green">#FF299D65</color>
+    <color name="black">#FF000000</color>
+    <color name="gray050">#FFF7F7F7</color>
+    <color name="gray100">#FFEDEDED</color>
+    <color name="gray150">#FFD9D9D9</color>
+    <color name="gray200">#FFCCCCCC</color>
+    <color name="gray300">#FFB2B2B2</color>
+    <color name="gray400">#FF999999</color>
+    <color name="gray500">#FF7F7F7F</color>
+    <color name="gray600">#FF656565</color>
+    <color name="gray700">#FF4C4C4C</color>
+    <color name="gray800">#FF323232</color>
+    <color name="gray900">#FF191919</color>
+    <color name="grayE6">#FFE6E7EA</color>
+    <color name="black22">#FF222222</color>
+
+    <!-- primary -->
+    <color name="primary050">#FFf2f7f8</color>
+    <color name="primary100">#FFD4EFF7</color>
+    <color name="primary200">#FFd4eff7</color>
+    <color name="primary300">#FF68b4cb</color>
+    <color name="primary400">#FF178caf</color>
+    <color name="primary500">#FF0E6C8B</color>
+    <color name="primary700">#FF083c4d</color>
+    <color name="primary900">#FF062631</color>
+
+    <!-- secondary -->
+    <color name="secondary200">#FFefbe7c</color>
+    <color name="secondary300">#FFf47f35</color>
+    <color name="secondary500">#FFed640e</color>
+    <color name="secondary700">#FFb7500f</color>
+
+    <color name="transparent">@android:color/transparent</color>
+
+    <!-- base -->
+    <color name="base100">#FFF7F2EC</color>
+    <color name="base200">#FFF5EBDF</color>
+    <color name="base300">#FFEDDFD0</color>
+    <color name="base350">#FFE0CDB9</color>
+    <color name="base500">#FFD3bca1</color>
+
+    <!-- special -->
+    <color name="danger">#FFe0032d</color>
+    <color name="link">#FF0a64cc</color>
+
+    <!-- Icon color -->
+    <color name="iconDisabled">#FF999999</color>
+    <color name="iconEnabled">#FFED640E</color>
+
+    <!-- shadow -->
+    <color name="shadow">#29000000</color>
+    <color name="shadow2">#52000000</color>
+
+    <!-- color from common -->
+    <color name="deepDark">#FF001626</color>
+
+    <!-- secondary -->
+    <color name="backgroundColor">#FFF6F5F3</color>
+
+    <!-- products -->
+    <color name="lightRed">#FFCB7373</color>
+
+    <!-- branding -->
+    <color name="brandingOwen">#FFCEE1FF</color>
+    <color name="brandingWinny">#FFF38EAD</color>
+    <color name="brandingDunlop">#FFD7FC51</color>
+    <color name="brandingBHPolo">#FFB7B0A3</color>
+
+    <!-- alert -->
+    <color name="alertError">#FFFE5050</color>
+    <color name="alertSuccess">#FF6DC68E</color>
+    <color name="alertLink">#FF007AFF</color>
+    <color name="alertWarning">#FFFFCC00</color>
+
+    <!-- icon -->
+    <color name="ellipse7">#FFE82828</color>
+    <color name="yellowGreen">#FFA1D239</color>
+    <color name="lightRedWinny">#FFFBC8CD</color>
+    <color name="silverFoil">#FFB7B0A3</color>
+    <color name="richElectricBlue">#FF0291D7</color>
+
+    <!-- more color -->
+    <color name="ghostWhite">#FFF6F5F3</color>
+    <color name="superSliver">#FFEFEFEF</color>
+    <color name="blackBanner">#FF001626</color>
+    <color name="datePickerTheme">#FF0D607D</color>
+
+    <color name="lineSeparated">#FF777068</color>
+
+    <!-- close button -->
+    <color name="closeButton">#FF323232</color>
+    <color name="closeButtonHover">#FFB3B9BE</color>
+
+    <!-- color evaluate -->
+    <color name="textEvaluate">#FF77757F</color>
+    <color name="starRatedColor">#FFFDAA63</color>
+    <color name="dividerDialog">#FFE8E8EA</color>
+
+    <color name="notificationBg">#FF2F304D</color>
+
+    <color name="grey200">#FFC5C5C5</color>
+    <color name="grey600">#FF737373</color>
+    <color name="grey800">#FF454545</color>
+
+    <!-- background -->
+    <color name="backgroundGrey1">#FFFFFFFF</color>
+    <color name="backgroundGrey3">#FFF2F3F5</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+</resources>

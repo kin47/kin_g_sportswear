@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "516848348249",
+    "project_id": "kin-g-sportswear",
+    "storage_bucket": "kin-g-sportswear.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:516848348249:android:26b292aee5957abc7b5548",
+        "android_client_info": {
+          "package_name": "com.example.kingsportswear"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNrXJ9rUTngAqiqtyJViS6943yq0bzLls"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

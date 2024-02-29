@@ -3,11 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/LoginFragment">
-
+    app:startDestination="@id/CoreFragment">
     <fragment
         android:id="@+id/LoginFragment"
-        android:name="com.example.kingsportswear.module.login.presentation.LoginFragment"
+        android:name="com.example.kingsportswear.presentation.login.LoginFragment"
         android:label="@string/login_fragment"
         tools:layout="@layout/fragment_login">
 
@@ -16,11 +15,11 @@
             app:destination="@id/RegisterFragment" />
         <action
             android:id="@+id/action_LoginFragment_to_HomeFragment"
-            app:destination="@id/HomeFragment" />
+            app:destination="@id/CoreFragment" />
     </fragment>
     <fragment
         android:id="@+id/RegisterFragment"
-        android:name="com.example.kingsportswear.module.register.presentation.RegisterFragment"
+        android:name="com.example.kingsportswear.presentation.register.RegisterFragment"
         android:label="@string/register_fragment"
         tools:layout="@layout/fragment_register">
 
@@ -29,12 +28,12 @@
             app:destination="@id/LoginFragment" />
         <action
             android:id="@+id/action_RegisterFragment_to_HomeFragment"
-            app:destination="@id/HomeFragment" />
+            app:destination="@id/CoreFragment" />
     </fragment>
     <fragment
-        android:id="@+id/HomeFragment"
-        android:name="com.example.kingsportswear.module.register.presentation.RegisterFragment"
-        android:label="@string/home_fragment"
-        tools:layout="@layout/fragment_home">
+        android:id="@+id/CoreFragment"
+        android:name="com.example.kingsportswear.presentation.core.CoreFragment"
+        android:label="@string/core_fragment"
+        tools:layout="@layout/fragment_core">
     </fragment>
 </navigation>

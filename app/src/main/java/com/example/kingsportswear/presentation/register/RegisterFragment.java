@@ -1,4 +1,4 @@
-package com.example.kingsportswear.module.register.presentation;
+package com.example.kingsportswear.presentation.register;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

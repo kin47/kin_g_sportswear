@@ -65,8 +65,7 @@
     <!-- color from common -->
     <color name="deepDark">#FF001626</color>
 
-    <!-- secondary -->
-    <color name="backgroundColor">#FFF6F5F3</color>
+    <color name="backgroundColor">#FFF3F4F5</color>
 
     <!-- products -->
     <color name="lightRed">#FFCB7373</color>

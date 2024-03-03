@@ -9,14 +9,19 @@
     <string name="search_fragment">Search Fragment</string>
     <string name="cart_fragment">Cart Fragment</string>
     <string name="profile_fragment">Profile Fragment</string>
+
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="or">Or</string>
+    <string name="admin">Admin</string>
+    <string name="member">Member</string>
 
     <string name="login_title">Let\'s get started</string>
     <string name="register_title">Where it all begins</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="login">Log In</string>
+    <string name="logout">Log Out</string>
     <string name="login_google">Continue with Google</string>
     <string name="dont_have_account">Don\'t have an account?</string>
     <string name="already_have_account">Already have an account?</string>
@@ -25,4 +30,10 @@
     <string name="cart">Cart</string>
     <string name="search">Search</string>
     <string name="profile">Profile</string>
+    <string name="edit_personal_info">Edit Personal Information</string>
+    <string name="language_settings">Language Setting</string>
+    <string name="english">English</string>
+    <string name="vietnamese">Vietnamese</string>
+
+    <string name="default_profile_name">Deez Nut</string>
 </resources>

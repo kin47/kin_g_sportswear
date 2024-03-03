@@ -12,12 +12,17 @@
     <string name="profile_fragment">Profile Fragment</string>
     <string name="next">Tiếp</string>
     <string name="previous">Trước</string>
+    <string name="or">Hoặc</string>
+
+    <string name="admin">Quản trị viên</string>
+    <string name="member">Thành viên</string>
 
     <string name="login_title">Hãy bắt đầu</string>
     <string name="register_title">Nơi mọi thứ bắt đầu</string>
     <string name="email">Email</string>
     <string name="password">Mật khẩu</string>
     <string name="login">Đăng nhập</string>
+    <string name="logout">Đăng xuất</string>
     <string name="login_google">Tiếp tục với Google</string>
     <string name="dont_have_account">Chưa có tài khoản?</string>
     <string name="already_have_account">Đã có tài khoản?</string>
@@ -26,4 +31,10 @@
     <string name="cart">Giỏ hàng</string>
     <string name="search">Tìm kiếm</string>
     <string name="profile">Cá nhân</string>
+    <string name="edit_personal_info">Thay đổi thông tin cá nhân</string>
+    <string name="language_settings">Cài đặt ngôn ngữ</string>
+    <string name="english">Tiếng Anh</string>
+    <string name="vietnamese">Tiếng Việt</string>
+
+    <string name="default_profile_name">Âu ba mê giang</string>
 </resources>

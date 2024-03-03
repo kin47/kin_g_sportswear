@@ -14,7 +14,7 @@
             android:id="@+id/action_LoginFragment_to_RegisterFragment"
             app:destination="@id/RegisterFragment" />
         <action
-            android:id="@+id/action_LoginFragment_to_HomeFragment"
+            android:id="@+id/action_LoginFragment_to_CoreFragment"
             app:destination="@id/CoreFragment" />
     </fragment>
     <fragment
@@ -27,7 +27,7 @@
             android:id="@+id/action_RegisterFragment_to_LoginFragment"
             app:destination="@id/LoginFragment" />
         <action
-            android:id="@+id/action_RegisterFragment_to_HomeFragment"
+            android:id="@+id/action_RegisterFragment_to_CoreFragment"
             app:destination="@id/CoreFragment" />
     </fragment>
     <fragment
@@ -35,5 +35,8 @@
         android:name="com.example.kingsportswear.presentation.core.CoreFragment"
         android:label="@string/core_fragment"
         tools:layout="@layout/fragment_core">
+        <action
+            android:id="@+id/action_CoreFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
     </fragment>
 </navigation>

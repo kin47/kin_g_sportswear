@@ -6,19 +6,24 @@ import android.graphics.drawable.ColorDrawable;
 import android.view.Gravity;
 import android.view.Window;
 
+import com.example.kingsportswear.R;
+
 public class LoadingUtils {
     private static Dialog dialog;
 
     public static void showLoading(Context context) {
-        Window window = dialog.getWindow();
-        window.getAttributes().gravity = Gravity.CENTER;
-        window.setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+        dialog = new Dialog(context);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.loading_widget);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+        dialog.getWindow().setGravity(Gravity.CENTER);
         dialog.setCancelable(false);
-        dialog.setTitle(null);
         dialog.show();
     }
 
     public static void hideLoading() {
-        dialog.dismiss();
+        if (dialog != null && dialog.isShowing()) {
+            dialog.dismiss();
+        }
     }
 }

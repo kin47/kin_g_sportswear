@@ -3,9 +3,13 @@ package com.example.kingsportswear.data.repository;
 import com.example.kingsportswear.data.service.AuthService;
 import com.example.kingsportswear.domain.repository.AuthRepository;
 import com.example.kingsportswear.utils.models.CustomResult;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
 
 import javax.inject.Inject;
+import javax.inject.Singleton;
 
+@Singleton
 public class AuthRepositoryImpl implements AuthRepository {
     private final AuthService authService;
 
@@ -15,23 +19,13 @@ public class AuthRepositoryImpl implements AuthRepository {
     }
 
     @Override
-    public CustomResult<Boolean> createUserWithEmailAndPassword(String email, String password) {
-        try {
-            authService.createUserWithEmailAndPassword(email, password);
-            return new CustomResult<>(true, null);
-        } catch (Exception e) {
-            return new CustomResult<>(false, e);
-        }
+    public Task<AuthResult> signUp(String email, String password) {
+           return authService.createUserWithEmailAndPassword(email, password);
     }
 
     @Override
-    public CustomResult<Boolean> signInWithEmailAndPassword(String email, String password) {
-        try {
-            authService.signInWithEmailAndPassword(email, password);
-            return new CustomResult<>(true, null);
-        } catch (Exception e) {
-            return new CustomResult<>(false, e);
-        }
+    public Task<AuthResult> logIn(String email, String password) {
+        return authService.signInWithEmailAndPassword(email, password);
     }
 
     @Override

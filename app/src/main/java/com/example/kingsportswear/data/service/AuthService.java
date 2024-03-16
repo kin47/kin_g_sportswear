@@ -1,16 +1,17 @@
 package com.example.kingsportswear.data.service;
 
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class AuthService {
-    private FirebaseAuth mAuth = FirebaseAuth.getInstance();
-
-    public void createUserWithEmailAndPassword(String email, String password) {
-        mAuth.createUserWithEmailAndPassword(email, password);
+    final FirebaseAuth mAuth = FirebaseAuth.getInstance();
+    public Task<AuthResult> createUserWithEmailAndPassword(String email, String password) {
+        return mAuth.createUserWithEmailAndPassword(email, password);
     }
 
-    public void signInWithEmailAndPassword(String email, String password) {
-        mAuth.signInWithEmailAndPassword(email, password);
+    public Task<AuthResult> signInWithEmailAndPassword(String email, String password) {
+        return mAuth.signInWithEmailAndPassword(email, password);
     }
 
     public boolean checkIfUserIsLoggedIn() {

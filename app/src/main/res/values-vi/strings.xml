@@ -17,6 +17,13 @@
     <string name="admin">Quản trị viên</string>
     <string name="member">Thành viên</string>
 
+    <string name="error_system">Lỗi hệ thống</string>
+    <string name="wrong_email_or_pass">Tài khoản hoặc mật khẩu không chính xác</string>
+    <string name="register_success">Đăng ký thành công</string>
+    <string name="register_failed">Đăng ký thất bại</string>
+    <string name="email_already_exists">Email đã tồn tại</string>
+    <string name="register_success_dialog_description">Cùng khám phá cửa hàng ngay nào!</string>
+
     <string name="login_title">Hãy bắt đầu</string>
     <string name="register_title">Nơi mọi thứ bắt đầu</string>
     <string name="email">Email</string>

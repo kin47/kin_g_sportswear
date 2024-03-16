@@ -16,6 +16,13 @@
     <string name="admin">Admin</string>
     <string name="member">Member</string>
 
+    <string name="error_system">System Error</string>
+    <string name="wrong_email_or_pass">Wrong email or password</string>
+    <string name="register_success">Register Success</string>
+    <string name="register_failed">Register Failed</string>
+    <string name="email_already_exists">Email already exists</string>
+    <string name="register_success_dialog_description">Let\'s explore our store!</string>
+
     <string name="login_title">Let\'s get started</string>
     <string name="register_title">Where it all begins</string>
     <string name="email">Email</string>

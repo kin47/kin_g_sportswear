@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categories">
+        <item>@string/man</item>
+        <item>@string/woman</item>
+        <item>@string/shoes</item>
+        <item>@string/clothes</item>
+        <item>@string/bag</item>
+        <item>@string/others</item>
+    </string-array>
+</resources>

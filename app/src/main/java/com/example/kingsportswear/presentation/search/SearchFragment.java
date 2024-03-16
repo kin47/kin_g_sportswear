@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 
 import com.example.kingsportswear.R;
 import com.example.kingsportswear.databinding.FragmentSearchBinding;
@@ -20,6 +21,7 @@ public class SearchFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         binding = FragmentSearchBinding.inflate(inflater, container, false);
+        binding.categorySpinner.setAdapter(new ArrayAdapter<>(getContext(), android.R.layout.simple_spinner_dropdown_item, getResources().getStringArray(R.array.categories)));
         return binding.getRoot();
     }
 

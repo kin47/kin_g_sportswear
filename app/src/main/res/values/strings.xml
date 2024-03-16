@@ -43,4 +43,12 @@
     <string name="vietnamese">Vietnamese</string>
 
     <string name="default_profile_name">Deez Nut</string>
+
+    <string name="search_hint">Search for products…</string>
+    <string name="man">Man</string>
+    <string name="woman">Woman</string>
+    <string name="shoes">Shoes</string>
+    <string name="clothes">Clothes</string>
+    <string name="bag">Bag</string>
+    <string name="others">Others</string>
 </resources>

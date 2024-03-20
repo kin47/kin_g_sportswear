@@ -38,5 +38,14 @@
         <action
             android:id="@+id/action_CoreFragment_to_LoginFragment"
             app:destination="@id/LoginFragment" />
+        <action
+            android:id="@+id/action_CoreFragment_to_ProductListFragment"
+            app:destination="@id/ProductListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ProductListFragment"
+        android:name="com.example.kingsportswear.presentation.product_list.ProductListFragment"
+        android:label="@string/product_list_fragment"
+        tools:layout="@layout/fragment_product_list">
     </fragment>
 </navigation>

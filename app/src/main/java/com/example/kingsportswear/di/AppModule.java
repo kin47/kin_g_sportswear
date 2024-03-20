@@ -10,7 +10,7 @@ import javax.inject.Singleton;
 import dagger.Module;
 import dagger.Provides;
 
-@Module(includes = {ServiceModule.class, RepositoryModule.class})
+@Module(includes = {DataModule.class, RepositoryModule.class})
 public class AppModule {
     private MyApp application;
 

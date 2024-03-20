@@ -64,9 +64,9 @@ public class LoginFragment extends Fragment {
                             .navigate(R.id.action_LoginFragment_to_CoreFragment);
                 } else {
                     try {
-                        Toast.makeText(getContext(), getContext().getString(R.string.wrong_email_or_pass), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), getString(R.string.wrong_email_or_pass), Toast.LENGTH_SHORT).show();
                     } catch (Exception e) {
-                        Toast.makeText(getContext(), getContext().getString(R.string.error_system), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), getString(R.string.error_system), Toast.LENGTH_SHORT).show();
                     }
                 }
                 LoadingUtils.hideLoading();

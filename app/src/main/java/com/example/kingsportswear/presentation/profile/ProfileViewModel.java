@@ -3,7 +3,6 @@ package com.example.kingsportswear.presentation.profile;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
-import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.kingsportswear.domain.repository.AuthRepository;
 import com.example.kingsportswear.utils.models.CustomResult;

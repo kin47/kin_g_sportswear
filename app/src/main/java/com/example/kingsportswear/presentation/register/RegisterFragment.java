@@ -55,15 +55,15 @@ public class RegisterFragment extends Fragment {
             viewModel.signUp(email, password).addOnCompleteListener(task -> {
                 if (task.isSuccessful()) {
                     DialogUtils.showInformationDialog(getContext(),
-                            getContext().getString(R.string.register_success),
-                            getContext().getString(R.string.register_success_dialog_description),
+                            getString(R.string.register_success),
+                            getString(R.string.register_success_dialog_description),
                             () -> {
                                 NavHostFragment.findNavController(RegisterFragment.this)
                                         .navigate(R.id.action_RegisterFragment_to_LoginFragment);
                             });
                 } else {
                     Log.w("RegisterFragment", "signUp:failure", task.getException());
-                    Toast.makeText(getContext(), getContext().getString(R.string.email_already_exists),
+                    Toast.makeText(getContext(), getString(R.string.email_already_exists),
                             Toast.LENGTH_SHORT).show();
                 }
                 LoadingUtils.hideLoading();

@@ -10,6 +10,7 @@
     <string name="search_fragment">Search Fragment</string>
     <string name="cart_fragment">Cart Fragment</string>
     <string name="profile_fragment">Profile Fragment</string>
+    <string name="product_list_fragment">Product List Fragment</string>
     <string name="next">Tiếp</string>
     <string name="previous">Trước</string>
     <string name="or">Hoặc</string>
@@ -45,10 +46,15 @@
 
     <string name="default_profile_name">Âu ba mê giang</string>
     <string name="search_hint">Tìm sản phẩm…</string>
+    <string name="choose_category">Chọn danh mục…</string>
     <string name="man">Nam</string>
     <string name="woman">Nữ</string>
     <string name="shoes">Giày dép</string>
     <string name="clothes">Quần áo</string>
     <string name="bag">Cặp/Balo</string>
     <string name="others">Khác</string>
+    <string name="product_name">Tên sản phẩm</string>
+    <string name="product_price">Giá</string>
+    <string name="product_category">Danh mục sản phẩm</string>
+    <string name="search_results">Kết quả tìm kiếm</string>
 </resources>

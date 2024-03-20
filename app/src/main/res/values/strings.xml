@@ -45,10 +45,17 @@
     <string name="default_profile_name">Deez Nut</string>
 
     <string name="search_hint">Search for products…</string>
+    <string name="choose_category">Choose category…</string>
     <string name="man">Man</string>
     <string name="woman">Woman</string>
     <string name="shoes">Shoes</string>
     <string name="clothes">Clothes</string>
     <string name="bag">Bag</string>
     <string name="others">Others</string>
+    <string name="search_results">Search Results</string>
+
+    <string name="product_name">Product Name</string>
+    <string name="product_price">Product Price</string>
+    <string name="product_category">Product Category</string>
+    <string name="product_list_fragment">Product List Fragment</string>
 </resources>

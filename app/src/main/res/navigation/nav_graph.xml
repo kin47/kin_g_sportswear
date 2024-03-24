@@ -47,5 +47,14 @@
         android:name="com.example.kingsportswear.presentation.product_list.ProductListFragment"
         android:label="@string/product_list_fragment"
         tools:layout="@layout/fragment_product_list">
+        <action
+            android:id="@+id/action_ProductListFragment_to_ProductDetailFragment"
+            app:destination="@id/ProductDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ProductDetailFragment"
+        android:name="com.example.kingsportswear.presentation.product_detail.ProductDetailFragment"
+        android:label="@string/product_detail_fragment"
+        tools:layout="@layout/fragment_product_detail">
     </fragment>
 </navigation>

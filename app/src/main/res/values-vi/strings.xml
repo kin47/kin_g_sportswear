@@ -11,6 +11,8 @@
     <string name="cart_fragment">Cart Fragment</string>
     <string name="profile_fragment">Profile Fragment</string>
     <string name="product_list_fragment">Product List Fragment</string>
+    <string name="product_detail_fragment">Product Detail Fragment</string>
+
     <string name="next">Tiếp</string>
     <string name="previous">Trước</string>
     <string name="or">Hoặc</string>
@@ -53,6 +55,9 @@
     <string name="clothes">Quần áo</string>
     <string name="bag">Cặp/Balo</string>
     <string name="others">Khác</string>
+    <string name="description">Mô tả</string>
+    <string name="add_to_cart">       Thêm vào giỏ hàng</string>
+    <string name="select_size">       Chọn kích cỡ</string>
     <string name="product_name">Tên sản phẩm</string>
     <string name="product_price">Giá</string>
     <string name="product_category">Danh mục sản phẩm</string>

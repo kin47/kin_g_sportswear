@@ -2,9 +2,11 @@ package com.example.kingsportswear.data.repository;
 
 import com.example.kingsportswear.data.service.AuthService;
 import com.example.kingsportswear.domain.repository.AuthRepository;
+import com.example.kingsportswear.utils.ResultSetCallback;
 import com.example.kingsportswear.utils.models.CustomResult;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseUser;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;
@@ -19,22 +21,18 @@ public class AuthRepositoryImpl implements AuthRepository {
     }
 
     @Override
-    public Task<AuthResult> signUp(String email, String password) {
-           return authService.createUserWithEmailAndPassword(email, password);
+    public void signUp(String email, String password, ResultSetCallback<AuthResult> callback) {
+        authService.createUserWithEmailAndPassword(email, password, callback);
     }
 
     @Override
-    public Task<AuthResult> logIn(String email, String password) {
-        return authService.signInWithEmailAndPassword(email, password);
+    public void logIn(String email, String password, ResultSetCallback<FirebaseUser> callback) {
+        authService.signInWithEmailAndPassword(email, password, callback);
     }
 
     @Override
-    public CustomResult<Boolean> checkIfUserIsLoggedIn() {
-        try {
-            return new CustomResult<>(authService.checkIfUserIsLoggedIn(), null);
-        } catch (Exception e) {
-            return new CustomResult<>(false, e);
-        }
+    public FirebaseUser getCurrentUser() {
+        return authService.getCurrentUser();
     }
 
     @Override

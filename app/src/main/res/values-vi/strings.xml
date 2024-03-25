@@ -25,6 +25,7 @@
     <string name="register_success">Đăng ký thành công</string>
     <string name="register_failed">Đăng ký thất bại</string>
     <string name="email_already_exists">Email đã tồn tại</string>
+    <string name="weak_password">Mật khẩu cần từ 6 kí tự trở lên</string>
     <string name="register_success_dialog_description">Cùng khám phá cửa hàng ngay nào!</string>
 
     <string name="login_title">Hãy bắt đầu</string>
@@ -64,4 +65,7 @@
     <string name="product_category">Danh mục sản phẩm</string>
     <string name="search_results">Kết quả tìm kiếm</string>
     <string name="remove_search_filter">Xóa bộ lọc tìm kiếm</string>
+    <string name="no_internet_connection">Không tìm thấy kết nối mạng</string>
+    <string name="please_fill_all_field">Vui lòng nhập đầy đủ các trường phía trên</string>
+    <string name="invalid_email">Email không đúng định dạng</string>
 </resources>

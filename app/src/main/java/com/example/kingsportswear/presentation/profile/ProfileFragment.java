@@ -43,8 +43,7 @@ public class ProfileFragment extends Fragment {
         binding.btnLogout.setOnClickListener(view1 -> {
             viewModel.signOut();
             if (viewModel.getState().getValue() == ProfileStateEnum.logoutSuccess) {
-                NavHostFragment.findNavController(ProfileFragment.this)
-                        .navigate(R.id.action_CoreFragment_to_LoginFragment);
+                getActivity().finish();
             } else {
                 // show error message
                 Toast.makeText(getContext(), viewModel.getMessage().getValue(), Toast.LENGTH_SHORT).show();

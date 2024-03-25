@@ -51,7 +51,7 @@
     </RelativeLayout>
 
     <Button
-        android:id="@+id/btn_search"
+        android:id="@+id/btn_reset_search"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner_container"
         android:layout_width="match_parent"
@@ -59,9 +59,24 @@
         android:layout_marginTop="20dp"
         android:layout_marginHorizontal="16dp"
         android:paddingVertical="14dp"
+        android:text="@string/remove_search_filter"
+        android:textAllCaps="false"
+        app:cornerRadius="28dp"
+        android:backgroundTint="@color/red"
+        />
+
+    <Button
+        android:id="@+id/btn_search"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_reset_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="16dp"
+        android:paddingVertical="14dp"
         android:text="@string/search"
         android:textAllCaps="false"
         app:cornerRadius="28dp"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="@color/green"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>

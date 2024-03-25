@@ -1,5 +1,7 @@
 package com.example.kingsportswear.presentation.search;
 
+import static androidx.navigation.fragment.FragmentKt.findNavController;
+
 import android.graphics.Color;
 import android.os.Bundle;
 
@@ -8,7 +10,6 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import android.os.Parcelable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,6 +21,7 @@ import com.example.kingsportswear.MyApp;
 import com.example.kingsportswear.R;
 import com.example.kingsportswear.data.model.Product;
 import com.example.kingsportswear.databinding.FragmentSearchBinding;
+import com.example.kingsportswear.presentation.core.CoreFragment;
 import com.example.kingsportswear.utils.LoadingUtils;
 
 import java.util.ArrayList;
@@ -74,6 +76,10 @@ public class SearchFragment extends Fragment {
                 return view;
             }
         });
+        binding.btnResetSearch.setOnClickListener(v -> {
+            binding.searchProduct.setQuery("", false);
+            binding.categorySpinner.setSelection(0);
+        });
         return binding.getRoot();
     }
 
@@ -96,7 +102,7 @@ public class SearchFragment extends Fragment {
                     Bundle data = new Bundle();
                     data.putString("searchKey", binding.searchProduct.getQuery().toString());
                     data.putParcelableArrayList("products", (ArrayList<Product>) viewModel.products.getValue());
-                    NavHostFragment.findNavController(SearchFragment.this).navigate(R.id.action_CoreFragment_to_ProductListFragment, data);
+                    NavHostFragment.findNavController(this).navigate(R.id.action_CoreFragment_to_ProductListFragment, data);
                     break;
                 case error:
                     LoadingUtils.hideLoading();

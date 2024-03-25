@@ -58,8 +58,10 @@
     <string name="description">Mô tả</string>
     <string name="add_to_cart">       Thêm vào giỏ hàng</string>
     <string name="select_size">       Chọn kích cỡ</string>
+    <string name="no_result_found">Không tìm thấy kết quả phù hợp</string>
     <string name="product_name">Tên sản phẩm</string>
     <string name="product_price">Giá</string>
     <string name="product_category">Danh mục sản phẩm</string>
     <string name="search_results">Kết quả tìm kiếm</string>
+    <string name="remove_search_filter">Xóa bộ lọc tìm kiếm</string>
 </resources>

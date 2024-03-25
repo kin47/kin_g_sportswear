@@ -1,9 +1,8 @@
-package com.example.kingsportswear.presentation.login;
+package com.example.kingsportswear.presentation.auth.login;
 
 public enum LoginStateEnum {
     init,
     loading,
-    idle,
     error,
     loginSuccess,
 }

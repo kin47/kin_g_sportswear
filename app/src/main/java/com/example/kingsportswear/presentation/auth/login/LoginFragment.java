@@ -1,5 +1,6 @@
-package com.example.kingsportswear.presentation.login;
+package com.example.kingsportswear.presentation.auth.login;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
+import com.example.kingsportswear.MainActivity;
 import com.example.kingsportswear.MyApp;
 import com.example.kingsportswear.R;
 import com.example.kingsportswear.databinding.FragmentLoginBinding;
@@ -27,16 +29,6 @@ public class LoginFragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         ((MyApp) getActivity().getApplication()).getAppComponent().inject(LoginFragment.this);
         super.onCreate(savedInstanceState);
-    }
-
-    @Override
-    public void onStart() {
-        super.onStart();
-        viewModel.checkIfUserIsLoggedIn();
-        if (viewModel.getState().getValue() == LoginStateEnum.loginSuccess) {
-            NavHostFragment.findNavController(LoginFragment.this)
-                    .navigate(R.id.action_LoginFragment_to_CoreFragment);
-        }
     }
 
     @Override
@@ -57,21 +49,34 @@ public class LoginFragment extends Fragment {
         binding.btnLogin.setOnClickListener(v -> {
             String email = binding.etLoginInputEmail.getText().toString();
             String password = binding.etLoginInputPassword.getText().toString();
-            LoadingUtils.showLoading(getContext());
-            viewModel.logIn(email, password).addOnCompleteListener(task -> {
-                if (task.isSuccessful()) {
-                    NavHostFragment.findNavController(LoginFragment.this)
-                            .navigate(R.id.action_LoginFragment_to_CoreFragment);
-                } else {
-                    try {
-                        Toast.makeText(getContext(), getString(R.string.wrong_email_or_pass), Toast.LENGTH_SHORT).show();
-                    } catch (Exception e) {
-                        Toast.makeText(getContext(), getString(R.string.error_system), Toast.LENGTH_SHORT).show();
-                    }
-                }
-                LoadingUtils.hideLoading();
-            });
+            if (email.isEmpty() || password.isEmpty()) {
+                Toast.makeText(getContext(), getString(R.string.please_fill_all_field), Toast.LENGTH_SHORT).show();
+            } else {
+                viewModel.logIn(email, password);
+            }
         });
+
+        viewModel.state.observe(getViewLifecycleOwner(), loginStateEnum -> {
+            switch (loginStateEnum) {
+                case loading:
+                    LoadingUtils.showLoading(getContext());
+                    break;
+                case loginSuccess:
+                    LoadingUtils.hideLoading();
+                    Intent intent = new Intent(getActivity(), MainActivity.class);
+                    intent.putExtra("user", viewModel.authUser.getValue());
+                    startActivity(intent);
+                    break;
+                case error:
+                    Toast.makeText(getContext(), viewModel.message.getValue(), Toast.LENGTH_SHORT).show();
+                    LoadingUtils.hideLoading();
+                    break;
+                default:
+                    LoadingUtils.hideLoading();
+                    break;
+            }
+        });
+        LoadingUtils.showLoading(getContext());
     }
 
     @Override

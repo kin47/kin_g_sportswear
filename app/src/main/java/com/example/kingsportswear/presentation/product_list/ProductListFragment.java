@@ -1,7 +1,5 @@
 package com.example.kingsportswear.presentation.product_list;
 
-import static androidx.navigation.fragment.FragmentKt.findNavController;
-
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -17,8 +15,6 @@ import com.example.kingsportswear.MyApp;
 import com.example.kingsportswear.R;
 import com.example.kingsportswear.data.model.Product;
 import com.example.kingsportswear.databinding.FragmentProductListBinding;
-import com.example.kingsportswear.presentation.core.CoreFragment;
-import com.example.kingsportswear.presentation.product_detail.ProductDetailFragment;
 import com.example.kingsportswear.utils.listener.ItemListener;
 
 import java.util.List;

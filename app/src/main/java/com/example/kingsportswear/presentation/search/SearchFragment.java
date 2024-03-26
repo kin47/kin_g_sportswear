@@ -102,11 +102,16 @@ public class SearchFragment extends Fragment {
                     Bundle data = new Bundle();
                     data.putString("searchKey", binding.searchProduct.getQuery().toString());
                     data.putParcelableArrayList("products", (ArrayList<Product>) viewModel.products.getValue());
-                    NavHostFragment.findNavController(this).navigate(R.id.action_CoreFragment_to_ProductListFragment, data);
+                    NavHostFragment.findNavController((CoreFragment) getParentFragment()).navigate(R.id.action_CoreFragment_to_ProductListFragment, data);
+                    // handle pop back from product list fragment
+                    viewModel.resetState();
                     break;
                 case error:
                     LoadingUtils.hideLoading();
                     Toast.makeText(getContext(), getString(R.string.error_system), Toast.LENGTH_SHORT).show();
+                    break;
+                default:
+                    LoadingUtils.hideLoading();
                     break;
             }
         });

@@ -42,4 +42,9 @@ public class SearchViewModel extends ViewModel {
             }
         });
     }
+
+    public void resetState() {
+        _actionState.postValue(SearchActionState.idle);
+        _products.postValue(null);
+    }
 }
